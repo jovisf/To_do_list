@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
       </RedesSociaisContainer>
 
       <CreditosContainer>
-        <p> Site feito por João Victor Soares Ferreira para processo seletivo da Viitra
+        <p> Site feito por João Victor Soares Ferreira
         </p>
       </CreditosContainer>
     </FooterContainer>
