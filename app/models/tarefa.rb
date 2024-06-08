@@ -4,13 +4,9 @@ class Tarefa < ApplicationRecord
     validates :nome, presence: true, length: { minimum: 5, maximum: 50 }
     validates :descricao, length: { maximum: 140 }
     validates :finalizada, inclusion: { in: [true, false] }
-    validates :prioridade, inclusion: { in: ['Baixa', 'Média', 'Alta'] }
+    enum prioridade: %i[baixa media alta].index_with(&:to_s), _default: 'baixa'
   
-    before_validation :set_prioridade_padrao
   
-    def set_prioridade_padrao
-      self.prioridade ||= 'Baixa'
-    end
   
     def finalizar
       return if finalizada?
@@ -20,7 +16,4 @@ class Tarefa < ApplicationRecord
       save
     end
   
-    def finalizada?
-      finalizada
-    end
   end
