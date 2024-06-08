@@ -1,24 +1,78 @@
-# README
+# To-do List App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um projeto de To-do List desenvolvido utilizando Ruby on Rails.
 
-Things you may want to cover:
+## Instruções de Execução
 
-* Ruby version
+### Pré-requisitos
 
-* System dependencies
+Certifique-se de ter o Ruby e o Rails instalados em sua máquina. Caso contrário, você pode instalá-los seguindo as instruções em [ruby-lang.org](https://www.ruby-lang.org/) e [rubyonrails.org](https://rubyonrails.org/).
 
-* Configuration
+### Configuração Inicial
 
-* Database creation
+1. Clone este repositório em sua máquina local:
 
-* Database initialization
+`git clone <URL_do_repositório>`
 
-* How to run the test suite
+2. Navegue até o diretório do projeto:
+   `cd to-do-list`
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Instale as dependências do projeto:
+ `bundle install`
 
-* Deployment instructions
+4. Execute as migrações do banco de dados:
+ `rails db`
 
-* ...
+### Execução do Servidor
+
+Para iniciar o servidor Rails, execute o seguinte comando no terminal:
+
+`rails server`
+
+
+Isso iniciará o servidor em `http://localhost:3000`.
+
+## Front-end
+
+As instruções para iniciar o front-end estão disponíveis no README da pasta `to-do-list-front`.
+
+## Regras de Negócio e Exigências
+
+### Feitas
+
+- [x] Regra de negócio 1
+- [x] Regra de negócio 2
+- [x] Regra de negócio 3
+- [x] Regra de negócio 4
+- [x] Regra de negócio 5
+- [x] Regra de negócio 6
+
+### Novas Regras de Negócio e Exigências
+
+- [x] Nova regra de negócio 1
+- [ ] Nova regra de negócio 2
+- [ ] Nova regra de negócio 3
+- [ ] Nova regra de negócio 4
+- [ ] Nova regra de negócio 5
+- [ ] Nova regra de negócio 6
+- [ ] Nova regra de negócio 7
+
+## Features
+
+### Obrigatórias
+
+- [x] Feature 1
+- [x] Feature 2
+- [x] Feature 3
+- [x] Feature 4
+- [x] Feature 5
+- [x] Feature 6
+- [x] Feature 7 (A tela inicial exibe todas as tarefas)
+
+### Não Obrigatórias
+
+- [ ] Feature 1
+- [ ] Feature 2
+- [ ] Feature 3
+- [x] Feature 4
+- [x] Feature 5
